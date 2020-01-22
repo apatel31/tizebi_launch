@@ -1,0 +1,136 @@
+/* Text and Images */
+html {
+  height: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    color: #2ea4cc;
+}
+
+img {
+    margin-bottom: -75px;
+}
+
+p {
+    color: #303036;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+* {box-sizing: border-box}
+
+
+/* Full-width input fields */
+input, select {
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input:focus, input[type=password]:focus,select {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button, .survey {
+  background-color: #2ea4cc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: #2ea4cc;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Layout */
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 10% 60% 10%;
+  grid-row-gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaff;
+  text-align: center;
+}
+
+header {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  width: 100%;
+  margin-bottom: 50px;
+
+}
+
+.slogan {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.subtitle-wrapper {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.early-access-email {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.sign-up-email {
+  width: 100%;
+  margin: 0;
+}
+
+.sign-up-button {
+  width: 33%;
+  margin: 0;
+  font-size: 12px;
+  padding: 5px 5px;
+}
+
+footer {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #2ea4cc;
+  text-align: center;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}

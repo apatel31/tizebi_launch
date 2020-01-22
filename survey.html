@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TizeBI</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href='css/survey_style.css' rel='stylesheet' />
+</head>
+
+<body>
+    <h1>Tizebi</h1>
+    <form action=''>
+        <div class='container-survey'>
+            <div class='introductory-questions'>
+                <input type="text" class='full' placeholder="First & Last Name" name="business-contact" required>
+                <input type='email' class='half' placeholder="Enter Email" name="email" required>
+                <input type="number" class='half' placeholder="Phone Number" name='number'>
+                <input type="text" class='half' placeholder="Name of Business" name='business-name' required>
+                <input type="text" class='half' placeholder="Industry" name='industry'>
+                <input type="number" class='half' placeholder="Employee Count" name='number-of-employees'>
+                <input type="number" class='half' placeholder="Number of Business Locations" name='bus-location-quantity'>
+            </div>
+            <div class='software-questions'>
+                <div class='pos-dropdown'>
+                    <label for='pos-select'>What POS System does your business use?</label>
+                    <select id='pos-select'>
+                        <option value='Square'>Square</option>
+                        <option value='Stripe'>Stripe</option>
+                        <option value='Clover'>Clover</option>
+                        <option value='Toast'>Toast</option>
+                        <option value='Shopify'>Shopify</option>
+                        <option value='Register'>Cash Register</option>
+                        <option value='Other'>Other</option>
+                    </select>
+                </div>
+                <div class='SaaS-checkbox'>
+                    <input type="checkbox" name="SaaS" value="Facebook">Facebook
+                    <input type="checkbox" name="SaaS" value="Google Ads"> Google Ads
+                    <input type="checkbox" name="SaaS" value="Quickbooks"> Quickbooks
+                    <input type="checkbox" name="SaaS" value="Salesforce"> Salesforce
+                    <input type="checkbox" name="SaaS" value="Harvest"> Harvest
+                    <input type="checkbox" name="SaaS" value="Insert"> Insert
+                </div>
+
+                <div class='rows-of-data'>
+                    <label for='rows-of-data'> How many rows of data would you estimate you have?</label>
+                    <select id='rows-of-data'>
+                        <option value='less-than-1-million'>Less than 1 Million</option>
+                        <option value='1-to-5-million'>1 to 5 Million</option>
+                        <option value='5-to-10-million'>5 to 10 Million</option>
+                        <option value='10-to-25-million'>10 to 25 Million</option>
+                        <option value='greater-than-25-million'>Greater than 25 Million</option>
+                    </select>
+                </div>
+            </div>
+            <div class='business-questions'>
+                <div class='data-imporatance'>
+                    <p>How important do you believe data is to your industry?</p>
+                    <input type="range" min='1' max='100' value="50" class='slider'>
+                </div>
+                <div class='analysis-frequency'>
+                    <label for='frequency-of-analysis'>How often do you analyze data for your business?</label>
+                    <select id='frequency-of-analysis'>
+                        <option value='everyday'>everyday</option>
+                        <option value='2-3-times-a-week'>2 to 3 times a week</option>
+                        <option value='once-a-week'>once a week</option>
+                        <option value='once-a-month'>once a month</option>
+                        <option value='never'>never</option>
+                    </select>
+                </div>
+                <div class='analysis-method'>
+                    <label for='method-of-analysis'>What tools do you usually use to analyze your data?</label> 
+                    <!-- Maybe make this a checkbox -->
+                    <select id='method-of-analysis'>
+                        <option value='excel'>Excel</option>
+                        <option value='google-sheets'>Google Scheets</option>
+                        <option value='tableau'>Tableau</option>
+                    </select>
+                </div>
+                <div class='tracked-metrics'>
+                    <input class='full' type="text" placeholder="What kind of metrics do you track?" name='metrics'>
+                </div>
+                <div class='struggle-metrics'>
+                    <input class='full' type='text' placeholder="What metrics do you struggle to track" name='struggle'>
+                </div>
+            </div>
+
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
